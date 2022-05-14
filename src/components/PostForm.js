@@ -50,14 +50,14 @@ function PostForm(){
                         value={values.body}
                         error={error? true: false}
                     />
-                    <Button type='submit' color='teal'>
+                    <Button type='submit' color='teal' style={{ marginBottom: 20 }}>
                         Submit
                     </Button>
                 </Form.Field>
             </Form>
             {
                 error && (
-                    <div className="ui error message" style={{ marginBottom: 20 }}>
+                    <div className="ui error message" style={{ marginBottom: 20, marginTop: 0 }}>
                         <ul className="list">
                             <li>{error.graphQLErrors[0].message}</li>
                         </ul>
